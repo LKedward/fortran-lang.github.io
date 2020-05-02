@@ -5,6 +5,8 @@ markdown: kramdown
 title: Fortran Programming Language
 description: "Fortran Programming Language"
 
+baseurl: fortran-lang.github.io
+
 news:
     name: Fortran Newsletter
     authors: Fortran Community
