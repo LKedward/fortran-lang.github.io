@@ -126,7 +126,7 @@ function resultsToHTML(results){
             out += ' ('
             var j;
             for (j=0;j<cats.length;j++){
-                out += '<a href="fortran-lang.github.io/packages/'+cats[j]+'">'+cats[j]+'</a>';
+                out += '<a href="/fortran-lang.github.io/packages/'+cats[j]+'">'+cats[j]+'</a>';
                 if (j<cats.length-1){
                     out += ', ';
                 }
