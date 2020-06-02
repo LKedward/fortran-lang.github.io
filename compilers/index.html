@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://unpkg.com/feather-icons"></script>
-    <link href="/fortran-lang.github.io/assets/css/main.css" rel="stylesheet">
-    <link href="/fortran-lang.github.io/assets/css/syntax.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/syntax.css" rel="stylesheet">
     <link rel="canonical" href="https://fortran-lang.org/compilers/" />
+    <script src="https://kit.fontawesome.com/8d17d4fe97.js" crossorigin="anonymous"></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -29,10 +30,10 @@
 	    <div class="navbar-header">
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
 		    <span class="sr-only">Toggle navigation</span>
-		    <img src="/fortran-lang.github.io/assets/img/icons/icon-menu.svg" alt="Toggle navigation" class="navbar-top-align">
+		    <img src="/assets/img/icons/icon-menu.svg" alt="Toggle navigation" class="navbar-top-align">
 		</button>
-		<a href="/fortran-lang.github.io/" class="navbar-brand">
-		    <img src="/fortran-lang.github.io/assets/img/fortran_logo_256x256.png" id="navbar-logo" alt="Fortran">
+		<a href="/" class="navbar-brand">
+		    <img src="/assets/img/fortran_logo_256x256.png" id="navbar-logo" alt="Fortran">
 		</a>
 	    </div>
 	    <div class="collapse navbar-collapse navbar-top-align" id="menu">
@@ -41,31 +42,51 @@
 		    
 		    <li>
 		    
-		    <a href="/fortran-lang.github.io/learn/">Learn</a>
+		    <a href="/learn/">Learn</a>
 		    
-		    </li>
+			</li>
 		
 		    
 		    <li class="current">
 		    
-		    <a href="/fortran-lang.github.io/compilers/">Compilers</a>
+		    <a href="/compilers/">Compilers</a>
 		    
-		    </li>
+			</li>
 		
 		    
 		    <li>
 		    
-		    <a href="/fortran-lang.github.io/packages">Packages</a>
+		    <a href="/packages">Packages</a>
 		    
-		    </li>
+			</li>
 		
 		    
 		    <li>
 		    
-		    <a href="/fortran-lang.github.io/news/">News</a>
+		    <a href="/news/">News</a>
 		    
-		    </li>
+			</li>
 		
+		<li>
+			<a  href="https://fortran-lang.discourse.group/" target="_blank">
+			<i class="fab fa-discourse"></i> <i class="icon-link" >Discourse</i>
+			</a>
+		</li>
+		<li>
+			<a href="https://twitter.com/fortranlang" target="_blank">
+				<i class="fab fa-twitter"></i> <i class="icon-link" >Twitter</i>
+			</a>
+		</li>
+		<li>
+			<a  href="https://github.com/fortran-lang" target="_blank">
+				<i class="fab fa-github"></i> <i class="icon-link" >Github</i>
+			</a>
+		</li>
+		<li>
+			<a  href="/news.xml" target="_blank">
+				<i class="fas fa-rss"></i> <i class="icon-link" >RSS Feed</i>
+			</a>
+		</li>
 		</ul>
 	    </div>
 	    </div>
@@ -146,9 +167,9 @@ CUDA programs can run several times faster on a single Tesla V100 GPU compared
 to all the cores of a dual-socket server, and interoperate with MPI and OpenMP
 to deliver the full power of today’s multi-GPU servers.</p>
 
-<h3 id="cray">Cray</h3>
+<h3 id="hpe--cray">HPE / Cray</h3>
 
-<p>The <a href="https://www.cray.com/sites/default/files/SB-Cray-Programming-Environment.pdf">Cray Compiler Environment (CCE)</a>
+<p>The <a href="https://www.cray.com/sites/default/files/SB-Cray-Programming-Environment.pdf">Cray Compiling Environment (CCE)</a>
 is the cornerstone innovation of Cray’s adaptive computing paradigm. CCE builds
 on a well-developed and sophisticated Cray technology base that identifies
 regions of computation that are either sequential scalar, vector parallel or
@@ -235,7 +256,7 @@ of Fortran 77, Fortran 90 and Fortran 95.</p>
 conforms to the Fortran-2003 standard (ISO/IEC 1539-1:2004) and supports many
 features from Fortran-2008 (ISO/IEC 1539-1:2010).</p>
 
-<h2 id="discountinued">Discountinued</h2>
+<h2 id="discontinued">Discontinued</h2>
 
 <p>The following is a list of Fortran compilers that seem discontinued, so we do
 not list them above:</p>
@@ -252,45 +273,57 @@ not list them above:</p>
 <h2 id="note">Note</h2>
 
 <p>Please let us know if there is any compiler that is not listed, or if we listed
-a compiler in the Discountinued section and it is in fact actively maintained.</p>
+a compiler in the Discontinued section and it is in fact actively maintained.</p>
 
 
     </div>
 
     <div class="col-narrow">
-  <h3>News</h3>
+  <h3><i class="far fa-newspaper"></i> News</h3>
   
     <table>
     
     
       <tr>
-        <td><a href="/fortran-lang.github.io/newsletter/2020/05/01/Fortran-Newsletter-May-2020/">Fortran newsletter: May 2020</a>&nbsp;&nbsp; </td>
+        <td><a href="/newsletter/2020/06/01/Fortran-Newsletter-June-2020/">Fortran newsletter: June 2020</a>&nbsp;&nbsp; </td>
+        <td style="white-space: nowrap; text-align: right">01 Jun 2020</td>
+      </tr>
+      
+    
+      <tr>
+        <td><a href="/newsletter/2020/05/01/Fortran-Newsletter-May-2020/">Fortran newsletter: May 2020</a>&nbsp;&nbsp; </td>
         <td style="white-space: nowrap; text-align: right">01 May 2020</td>
       </tr>
       
     
       <tr>
-        <td><a href="/fortran-lang.github.io/newsletter/2020/04/18/Fortran-Webinar/">Open Source Directions Fortran webinar</a>&nbsp;&nbsp; </td>
+        <td><a href="/newsletter/2020/04/18/Fortran-Webinar/">Open Source Directions Fortran webinar</a>&nbsp;&nbsp; </td>
         <td style="white-space: nowrap; text-align: right">18 Apr 2020</td>
       </tr>
       
     
       <tr>
-        <td><a href="/fortran-lang.github.io/newsletter/2020/04/06/Announcing-FortranCon-2020/">Announcing FortranCon 2020</a>&nbsp;&nbsp; </td>
+        <td><a href="/newsletter/2020/04/06/Announcing-FortranCon-2020/">Announcing FortranCon 2020</a>&nbsp;&nbsp; </td>
         <td style="white-space: nowrap; text-align: right">06 Apr 2020</td>
       </tr>
       
     
       <tr>
-        <td><a href="/fortran-lang.github.io/newsletter/2020/02/28/J3-february-meeting/">J3 February 2020 Meeting</a>&nbsp;&nbsp; </td>
+        <td><a href="/newsletter/2020/02/28/J3-february-meeting/">J3 February 2020 Meeting</a>&nbsp;&nbsp; </td>
         <td style="white-space: nowrap; text-align: right">28 Feb 2020</td>
       </tr>
       
     
     </table>
-    <p><a href="/fortran-lang.github.io/news/archive">More…</a></p>
+    <p><a href="/news">More…</a></p>
 
-  <h3>What is Fortran?</h3>
+  </br>
+
+
+    <a class="twitter-timeline" data-height="500" href="https://twitter.com/fortranlang?ref_src=twsrc%5Etfw"></a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <!-- <h3>What is Fortran?</h3>
 <p>
 Fortran is a high-performance parallel programming language
 designed for scientific and engineering applications.
@@ -302,16 +335,33 @@ page to explore the projects and get involved.
 </p>
 
 
-  <h3>Twitter</h3>
-  <a href="https://twitter.com/fortranlang" class="twitter-follow-button" data-show-count="true" data-size="large">@fortranlang</a>
+  <h3> <i class="fas fa-envelope-open-text"></i> Mailing list</h3>
+
+<p>Subscribe to our <a href="https://groups.io/g/fortran-lang" target="_blank">mailing list</a>
+to discuss anything Fortran related, announce Fortran projects, discuss development
+of core fortran-lang.org projects (stdlib, fpm), and get
+the latest news.</p>
+
+
+  <h3><i class="fab fa-discourse"></i> Discourse</h3>
+<p>
+    Join the discussion about all things Fortran on the 
+    <a href="https://fortran-lang.discourse.group" target="_blank">fortran-lang discourse.</a>
+</p>
+
+
+  <h3><i class="fab fa-twitter"></i> Twitter</h3>
+
+<a href="https://twitter.com/fortranlang" class="twitter-follow-button" data-show-count="true" data-size="large">@fortranlang</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 
-  <h3>RSS</h3>
-  <p>
-  RSS clients can follow the <a href="/fortran-lang.github.io/news.xml">RSS feed</a>.
-  </p>
+  
+<h3><i class="fas fa-rss"></i> RSS feed</h3>
+<p>RSS clients can follow the <a href="/news.xml" target="_blank">RSS feed</a>.</p>
+ -->
+
 </div>
 
   </div>
@@ -322,22 +372,22 @@ page to explore the projects and get involved.
   <div class="container">
     <div class="col-wide">
     
-      <a href="/fortran-lang.github.io/learn/">Learn</a>
+      <a href="/learn/">Learn</a>
       
         &middot;
       
     
-      <a href="/fortran-lang.github.io/compilers/">Compilers</a>
+      <a href="/compilers/">Compilers</a>
       
         &middot;
       
     
-      <a href="/fortran-lang.github.io/packages">Packages</a>
+      <a href="/packages">Packages</a>
       
         &middot;
       
     
-      <a href="/fortran-lang.github.io/news/">News</a>
+      <a href="/news/">News</a>
       
     
     </div>
@@ -353,6 +403,7 @@ page to explore the projects and get involved.
      
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="/assets/js/page_nav.js"></script>
     <script>
       feather.replace()
     </script>

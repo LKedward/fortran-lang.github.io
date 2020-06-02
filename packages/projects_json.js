@@ -481,6 +481,26 @@ projects = [
         },
       
         {
+          "name": "f03gl",
+          "description": "Fortran 2003 interface to OpenGL",
+          "github": "",
+          "url": "http://www-stone.ch.cam.ac.uk/pub/f03gl/index.xhtml",
+          "categories": "graphics interfaces",
+          "tags": "graphics interface opengl",
+          "license": "GNU GPL v3"
+        },
+      
+        {
+          "name": "PLplot",
+          "description": "Library for scientific plotting",
+          "github": "",
+          "url": "http://plplot.sourceforge.net/",
+          "categories": "graphics interfaces",
+          "tags": "plot surface contour interface",
+          "license": "GNU LGPL v3"
+        },
+      
+        {
           "name": "pyplot-fortran",
           "description": "For generating plots from Fortran using Python's matplotlib.pyplot",
           "github": "jacobwilliams/pyplot-fortran",
@@ -553,11 +573,11 @@ projects = [
         {
           "name": "LAPACK",
           "description": "Routines for numerical linear algebra",
-          "github": "xianyi/OpenBLAS",
+          "github": "Reference-LAPACK/lapack",
           "url": "",
           "categories": "numerical",
           "tags": "blas linear algera",
-          "license": ""
+          "license": "BSD 3-Clause"
         },
       
         {
@@ -597,7 +617,7 @@ projects = [
           "url": "",
           "categories": "numerical",
           "tags": "eigenvalue eigenvector singular value decomposition svd",
-          "license": "none"
+          "license": "BSD 3-Clause"
         },
       
         {
@@ -607,6 +627,16 @@ projects = [
           "url": "",
           "categories": "numerical",
           "tags": "back propagation coarray",
+          "license": ""
+        },
+      
+        {
+          "name": "ParaMonte",
+          "description": "A general-purpose high-performance MPI/Coarray-parallel Monte Carlo simulation library implemented in Fortran 2018 with interfaces to C/C++/Fortran/MATLAB/Python",
+          "github": "cdslaborg/paramonte",
+          "url": "",
+          "categories": "numerical",
+          "tags": "parallel mpi coarray monte carlo mcmc c cpp matlab python statistics bayesian stochastic optimization sampling integration machine learning",
           "license": ""
         },
       
@@ -635,7 +665,7 @@ projects = [
           "description": "Fortran interface to the GNU Scientific Library",
           "github": "reinh-bader/fgsl",
           "url": "",
-          "categories": "numerical scientific",
+          "categories": "numerical interfaces",
           "tags": "",
           "license": ""
         },
@@ -645,7 +675,7 @@ projects = [
           "description": "collection of fortran modules and procedures for scientific calculations.",
           "github": "aamaricci/SciFortran",
           "url": "",
-          "categories": "numerical scientific",
+          "categories": "numerical",
           "tags": "",
           "license": ""
         },
@@ -741,12 +771,12 @@ projects = [
         },
       
         {
-          "name": "QEF",
-          "description": "Codes for electronic-structure calculations and materials modeling at the nanoscale.",
+          "name": "Quantum ESPRESSO",
+          "description": "Quantum ESPRESSO is an integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale",
           "github": "QEF/q-e",
           "url": "",
           "categories": "scientific",
-          "tags": "electron structure simulation physics",
+          "tags": "electronic structure calculations quantum chemistry physics molecular dynamics mpi",
           "license": ""
         },
       
@@ -791,6 +821,36 @@ projects = [
         },
       
         {
+          "name": "Castro",
+          "description": "An adaptive mesh, astrophysical radiation hydrodynamics simulation code",
+          "github": "AMReX-Astro/Castro",
+          "url": "",
+          "categories": "scientific",
+          "tags": "adaptive mesh astrophysics radiation hydrodynamics",
+          "license": "BSD 3-Clause"
+        },
+      
+        {
+          "name": "QUIP",
+          "description": "The QUIP package is a collection of software tools to carry out molecular dynamics simulations.",
+          "github": "libAtoms/QUIP",
+          "url": "",
+          "categories": "scientific",
+          "tags": "electronic structure calculations quantum chemistry physics molecular dynamics mpi qm-mm",
+          "license": "GNU GPL V2"
+        },
+      
+        {
+          "name": "ABINIT",
+          "description": "ABINIT is a software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials",
+          "github": "abinit/abinit",
+          "url": "",
+          "categories": "scientific",
+          "tags": "electronic structure calculations quantum chemistry physics molecular dynamics mpi",
+          "license": ""
+        },
+      
+        {
           "name": "NASTRAN 95",
           "description": "NASA Structural Analysis System, a finite element analysis program (FEA) completed in the early 1970's",
           "github": "nasa/NASTRAN-95",
@@ -828,6 +888,36 @@ projects = [
           "categories": "scientific",
           "tags": "fluid dynamics fluid simulation computational fluid dynamics turbulence high performance computing hpc cfd",
           "license": ""
+        },
+      
+        {
+          "name": "Truchas",
+          "description": "3D Multiphysics Simulation of Metal Casting and Processing",
+          "github": "truchas/truchas-release",
+          "url": "",
+          "categories": "scientific",
+          "tags": "fluid dynamics metal casting multiphysics hpc",
+          "license": "BSD 3-Clause"
+        },
+      
+        {
+          "name": "dftatom",
+          "description": "Routines for Radial Integration of Dirac, Schrödinger, and Poisson Equations",
+          "github": "certik/dftatom",
+          "url": "",
+          "categories": "scientific",
+          "tags": "electronic structure calculations atomic",
+          "license": "MIT"
+        },
+      
+        {
+          "name": "MESA",
+          "description": "Modules for Experiments in Stellar Astrophysics",
+          "github": "",
+          "url": "http://mesa.sourceforge.net/",
+          "categories": "scientific",
+          "tags": "stellar astrophysics",
+          "license": "GNU GPL V2"
         },
       
         {
