@@ -274,6 +274,18 @@ ghContributorStats = function() {
 
         var userContribData = new Map();
 
+        // Feature-detection for date parsing
+        //  Fixes: invalid date bug with Safari browser
+        var testDateFmt = "2020-05-31 10:23:57+00:00";
+        if (isNaN(new Date(testDateFmt).valueOf())) {
+            var dateParse = function(dateStr){
+                return new Date( dateStr.replace(/-/g, "/") )};
+        } else {
+            var dateParse = function(dateStr){
+                return new Date( dateStr );
+            }
+        }
+
         for (var i = 0; i < repo.issues.length; i++) {
 
             if (!userContribData.has(repo.issues[i].user)){
@@ -281,7 +293,7 @@ ghContributorStats = function() {
             }
 
             var userData = userContribData.get(repo.issues[i].user);
-            userData.push({repo: repo.name, date: new Date(repo.issues[i].date.replace(/-/g, "/"))});
+            userData.push({repo: repo.name, date: dateParse(repo.issues[i].date)});
 
             let comments = repo.issues[i].comments;
 
@@ -296,7 +308,7 @@ ghContributorStats = function() {
                 }
 
                 userData = userContribData.get(comments[j].user);
-                userData.push({repo: repo.name, date: new Date(comments[j].date.replace(/-/g, "/"))});
+                userData.push({repo: repo.name, date: dateParse(comments[j].date)});
                 
             }
 
@@ -323,7 +335,7 @@ ghContributorStats = function() {
             <div class="col-flex contributor"> 
             <div style="display: inline-block; min-width: max-content;">
             <img src="https://github.com/{{userName}}.png?size=40" width="40" style="border-radius: 7px;">
-            <div style="display: inline-block; vertical-align: middle; margin-left: 10px;">
+            <div style="display: inline-block; vertical-align: middle; margin-left: 10px; min-width:170px">
             <a class="hidenewwindow" href="https://github.com/{{userName}}" target="_blank" rel="noopener" style="font-size:22px;">
             {{userName}} </a> </br>
             <i><b> {{nContrib}} contributions </b></i>
