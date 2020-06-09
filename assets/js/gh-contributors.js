@@ -296,7 +296,7 @@ ghContributorStats = function() {
                 }
 
                 userData = userContribData.get(comments[j].user);
-                userData.push({repo: repo.name, date: new Date(comments[j].date.replace(' ','T'))});
+                userData.push({repo: repo.name, date: new Date(comments[j].date.replace(/-/g, "/"))});
                 
             }
 
