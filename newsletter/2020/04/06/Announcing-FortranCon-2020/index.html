@@ -7,14 +7,21 @@
     <meta name="description" content="Fortran Programming Language">
     <title>Announcing FortranCon 2020 - Fortran Programming Language</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://unpkg.com/feather-icons"></script>
-    <link href="/assets/css/main.css" rel="stylesheet">
-    <link href="/assets/css/syntax.css" rel="stylesheet">
+    <link href="/fortran-lang.github.io/assets/css/main.css" rel="stylesheet">
+    <link href="/fortran-lang.github.io/assets/css/syntax.css" rel="stylesheet">
     <link rel="canonical" href="https://fortran-lang.org/newsletter/2020/04/06/Announcing-FortranCon-2020/" />
     <script src="https://kit.fontawesome.com/8d17d4fe97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="/fortran-lang.github.io/assets/github-activity-0.1.5/github-activity-0.1.5.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="/fortran-lang.github.io/assets/github-activity-0.1.5/github-activity-0.1.5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" integrity="sha256-TQq84xX6vkwR0Qs1qH5ADkP+MvH0W+9E7TdHJsoIQiM=" crossorigin="anonymous"></script>
+    
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -30,10 +37,10 @@
 	    <div class="navbar-header">
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
 		    <span class="sr-only">Toggle navigation</span>
-		    <img src="/assets/img/icons/icon-menu.svg" alt="Toggle navigation" class="navbar-top-align">
+		    <img src="/fortran-lang.github.io/assets/img/icons/icon-menu.svg" alt="Toggle navigation" class="navbar-top-align">
 		</button>
-		<a href="/" class="navbar-brand">
-		    <img src="/assets/img/fortran_logo_256x256.png" id="navbar-logo" alt="Fortran">
+		<a href="/fortran-lang.github.io/" class="navbar-brand">
+		    <img src="/fortran-lang.github.io/assets/img/fortran_logo_256x256.png" id="navbar-logo" alt="Fortran">
 		</a>
 	    </div>
 	    <div class="collapse navbar-collapse navbar-top-align" id="menu">
@@ -42,28 +49,35 @@
 		    
 		    <li>
 		    
-		    <a href="/learn/">Learn</a>
+		    <a href="/fortran-lang.github.io/learn/">Learn</a>
 		    
 			</li>
 		
 		    
 		    <li>
 		    
-		    <a href="/compilers/">Compilers</a>
+		    <a href="/fortran-lang.github.io/compilers/">Compilers</a>
 		    
 			</li>
 		
 		    
 		    <li>
 		    
-		    <a href="/packages">Packages</a>
+		    <a href="/fortran-lang.github.io/community/">Community</a>
+		    
+			</li>
+		
+		    
+		    <li>
+		    
+		    <a href="/fortran-lang.github.io/packages">Packages</a>
 		    
 			</li>
 		
 		    
 		    <li class="current">
 		    
-		    <a href="/news/">News</a>
+		    <a href="/fortran-lang.github.io/news/">News</a>
 		    
 			</li>
 		
@@ -83,7 +97,7 @@
 			</a>
 		</li>
 		<li>
-			<a  href="/news.xml" target="_blank">
+			<a  href="/fortran-lang.github.io/news.xml" target="_blank">
 				<i class="fas fa-rss"></i> <i class="icon-link" >RSS Feed</i>
 			</a>
 		</li>
@@ -99,7 +113,7 @@
   <div class="container">
     <div class="newsletter col-wide">
 
-      <a href="/news" > < Back to news</a>
+      <a href="/fortran-lang.github.io/news" > < Back to news</a>
 
       <h1>Announcing FortranCon 2020</h1>
 
@@ -143,22 +157,27 @@ travel.</p>
   <div class="container">
     <div class="col-wide">
     
-      <a href="/learn/">Learn</a>
+      <a href="/fortran-lang.github.io/learn/">Learn</a>
       
         &middot;
       
     
-      <a href="/compilers/">Compilers</a>
+      <a href="/fortran-lang.github.io/compilers/">Compilers</a>
       
         &middot;
       
     
-      <a href="/packages">Packages</a>
+      <a href="/fortran-lang.github.io/community/">Community</a>
       
         &middot;
       
     
-      <a href="/news/">News</a>
+      <a href="/fortran-lang.github.io/packages">Packages</a>
+      
+        &middot;
+      
+    
+      <a href="/fortran-lang.github.io/news/">News</a>
       
     
     </div>
@@ -171,10 +190,15 @@ travel.</p>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
      
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="/assets/js/page_nav.js"></script>
+    <script src="/fortran-lang.github.io/assets/js/fortranlang.js"></script>
+    <script src="/fortran-lang.github.io/assets/js/page_nav.js"></script>
+    <script src="/fortran-lang.github.io/assets/js/gh-contributors.js"></script>
+    <script src="/fortran-lang.github.io/assets/js/package_search.js"></script>
+    <script src="/fortran-lang.github.io/assets/js/package_tags.js"></script>
     <script>
       feather.replace()
     </script>
