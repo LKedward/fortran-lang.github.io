@@ -38,7 +38,7 @@ jobs:
       with:
         ruby-version: 2.7
         # bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-        
+    
     # Setup Jekyll in SRC_DIR
     - name: Setup Jekyll
       run: |
